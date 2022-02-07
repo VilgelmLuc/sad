@@ -36,18 +36,21 @@ header {
 
 .gallery {
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+
+
+
 }
 
 
 
-.gallery__item {
-    display: inline-flex;
+.gallery__item{
+    float: right;
     margin: 10px 10px;
-flex-direction: row;
+    width: 284px;
+    height: 284px;
+    
+    }
 
+.clear {
+    clear: both;
 }
-
