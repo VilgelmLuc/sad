@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI';
     text-align: center;
-    background-color: #E5E5E5;
+    background-color: #A8E4A0;
     font-size: 14px;
 
 }
@@ -20,6 +20,9 @@ a {
     text-decoration: none;
 }
 
+ul li {
+    list-style: none;
+}
 
 .section__title {
     font-size: 24px;
@@ -45,8 +48,7 @@ header {
 .offers__item {
     margin: 0 16px 16px 0;
     width: 360px;
-    height: 770px;
-    text-decoration: none;
+    height: 720px;
     background: white;
 }
 
@@ -54,19 +56,68 @@ header {
     margin-right: 0;
 }
 
-.offers__btn {
-    width: 170px;
-    background-color: white;
-    border: 3px solid  #EF3120;
-    border-radius: 58px;
-    padding: 18px 18px;
-    color: #EF3120;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 190px;
+.offers__content {
+    margin: 0 0 30px 30px;
 }
 
-.offers__btn:hover {
+.offers__subtitle {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.meals {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.meals__col--right,
+.meals__col--left {
+    padding: 0;
+    margin-right: 30px;
+}
+
+.meals__item {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.meals__icon {
+    margin-right: 5px;
+}
+
+.meals__desc {
+    margin: 0;
+}
+
+.menu {
+    padding: 0;
+    margin-bottom: 60px;
+
+}
+
+.menu__item {
+    list-style: disc;
+    padding: auto;
+    margin-left: 20px;
+}
+
+
+
+.offers__btn--link {
+    color: #EF3120;
+    width: 170px;
+    background-color: white;
+    border: 3px solid #EF3120;
+    border-radius: 58px;
+    padding: 18px 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+
+.offers__btn--link:hover {
     background-color: #EF3120;
-    color: white;
+    transition: 0.4s;
+    color: #FFFFFF;
 }
