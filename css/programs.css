@@ -52,6 +52,17 @@ header {
     background: white;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.offers__item:hover {
+    box-shadow: 7px 7px gray, 7px 7px gray;
+    transition: 0.4s;
+    margin-top: -10px;
+}
+
 .offers__item:last-child {
     margin-right: 0;
 }
