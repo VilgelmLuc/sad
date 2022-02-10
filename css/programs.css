@@ -50,6 +50,8 @@ header {
     width: 360px;
     height: 720px;
     background: white;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 img {

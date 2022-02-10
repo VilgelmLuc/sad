@@ -1,11 +1,13 @@
 body {
-    background: #fff top left/50px 50px no-repeat,#95C11F left 40px top 40px/50px 50px no-repeat;
     color: black;
+    background: url(../img/greenback.svg) center center/contain no-repeat;
+
     font-size: 16px;
     line-height: 1.42;
     font-family: 'Segoe UI';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
 a {
@@ -32,7 +34,7 @@ h4 {
 .container {
     margin: 0 auto;
     width: 1170px;
-}
+    }
 
 .header {
     height: 120px;
