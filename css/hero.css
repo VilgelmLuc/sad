@@ -1,13 +1,12 @@
 body {
     color: black;
-    background: url(../img/greenback.svg) center center/contain no-repeat;
-
     font-size: 16px;
     line-height: 1.42;
     font-family: 'Segoe UI';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+    width: 1380px;
+    margin: 0 auto;
 }
 
 a {
@@ -34,10 +33,20 @@ h4 {
 .container {
     margin: 0 auto;
     width: 1170px;
-    }
+}
+
+.container-hero {
+    margin: 0 auto;
+    width: 1380px;
+    background: url(../img/greenback.svg) -100px top no-repeat;
+}
+.container-hero--benefits {
+    margin: 0 auto;
+    width: 1170px;
+}
 
 .header {
-    height: 120px;
+    height: 70px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -94,13 +103,17 @@ h4 {
     font-size: 13px;
     text-decoration: underline;
 }
-.hero content{
+
+.hero__content {
+    width: 1380px;
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
+
 .hero__title-section {
     width: 450px;
-    margin-right: 30px;
+    padding-left: 100px;
 }
 
 .hero__title {
@@ -114,6 +127,12 @@ h4 {
 .hero__subtitle {
     font-size: 18px;
     margin-bottom: 45px;
+    font-weight: bold;
+
+}
+.hero__img-section{
+padding-right: 30px;
+padding-bottom: 0px ;
 }
 
 .offers__btn {
@@ -146,13 +165,15 @@ h4 {
     width: 30px;
     height: 30px;
     padding: 10px 10px;
-   border-radius: 30px;
+    border-radius: 30px;
 }
-.benefits{
+
+.benefits {
     display: flex;
     justify-content: space-between;
 }
-.benefits__item{
+
+.benefits__item {
     justify-content: center;
     width: 150px;
 }
