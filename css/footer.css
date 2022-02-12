@@ -78,11 +78,12 @@ ul li {
 }
 
 .form__input {
+    color: #ffffff;
     width: 100%;
     border: none;
     background: #282828;
     padding: 1rem 0.6111111111rem;
-    border-bottom: solid #ffffff 3px ;
+    border-bottom: solid #ffffff 2px ;
 }
 
 .form__input_textarea {
