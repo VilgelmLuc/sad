@@ -1,5 +1,4 @@
 body {
-    background: black;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.42;
@@ -65,8 +64,9 @@ ul li {
 
 .form__row {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 70px;
 }
+
 
 .form__block {
     flex: 1;
@@ -117,8 +117,52 @@ ul li {
     border: 3px solid #282828;
 
 }
+.radio {
+    display: flex;
+    cursor: pointer;
+    -webkit-user-select: none;
+            user-select: none;
+    margin-bottom: 70px;
+    margin-right: 20px;
+        
+  }
+  .radio__checkbox {
+  }
+  .radio__checkbox .radio__visible:before {
+    background: url(../img/galochka.svg) center center no-repeat;
+  }
+  
+  .radio__elem {
+    display: none;
+  }
+  .radio__elem:checked ~ .radio__visible:before {
+    display: block;
+  }
+  
+  .radio__visible {
+    border:3px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 50%;
+    background: #282828;
+    margin-right: 0.5555555556rem;
+  }
+  .radio__visible:before {
+    content: "";
+    width: 0.7777777778rem;
+    height: 0.7777777778rem;
+    background: url(./img/galochka.svg) center center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 footer {
+    background: black;
     margin: 0 auto;
     height: 250px;
     width: 1380px;
