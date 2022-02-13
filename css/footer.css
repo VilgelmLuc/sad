@@ -128,7 +128,7 @@ ul li {
   }
   .radio__checkbox {
   }
-  .radio__checkbox .radio__visible:before {
+  .radio__checkbox  {
     background: url(../img/galochka.svg) center center no-repeat;
   }
   
@@ -150,10 +150,33 @@ ul li {
   }
   .radio__visible:before {
     content: "";
-    width: 0.7777777778rem;
-    height: 0.7777777778rem;
-    background: url(./img/galochka.svg) center center no-repeat;
+    width: 10px;
+    height:10px;
+    background: #fff;
     border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .radio__elem:checked ~ .radio__visible--square:before {
+    display: block;
+  }
+  
+  .radio__visible--square {
+    border:3px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background: #282828;
+    margin-right: 0.5555555556rem;
+  }
+  .radio__visible--square:before {
+    content: "";
+    width: 10px;
+    height:10px;
+    background: url(../img/galochka.svg) center center no-repeat;
     position: absolute;
     display: none;
     top: 50%;
