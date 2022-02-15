@@ -83,7 +83,7 @@ ul li {
     border: none;
     background: #282828;
     padding: 1rem 0.6111111111rem;
-    border-bottom: solid #ffffff 2px ;
+    border-bottom: solid #ffffff 2px;
 }
 
 .form__input_textarea {
@@ -97,6 +97,7 @@ ul li {
     display: flex;
     flex-wrap: wrap;
 }
+
 .btn__theme--forms {
     color: #ffffff;
     width: 220px;
@@ -113,45 +114,42 @@ ul li {
 .btn__theme--forms:hover {
     background-color: #fff;
     transition: 0.4s;
-    color: #282828;  
+    color: #282828;
     border: 3px solid #282828;
 
 }
+
 .radio {
     display: flex;
     cursor: pointer;
     -webkit-user-select: none;
-            user-select: none;
+    user-select: none;
     margin-bottom: 70px;
     margin-right: 20px;
-        
-  }
-  .radio__checkbox {
-  }
-  .radio__checkbox  {
-    background: url(../img/galochka.svg) center center no-repeat;
-  }
-  
-  .radio__elem {
+}
+
+.radio__elem {
     display: none;
-  }
-  .radio__elem:checked ~ .radio__visible:before {
+}
+
+.radio__elem:checked~.radio__visible:before {
     display: block;
-  }
-  
-  .radio__visible {
-    border:3px solid #ffffff;
+}
+
+.radio__visible {
+    border: 3px solid #ffffff;
     width: 20px;
     height: 20px;
     position: relative;
     border-radius: 50%;
     background: #282828;
     margin-right: 0.5555555556rem;
-  }
-  .radio__visible:before {
+}
+
+.radio__visible:before {
     content: "";
     width: 10px;
-    height:10px;
+    height: 10px;
     background: #fff;
     border-radius: 50%;
     position: absolute;
@@ -159,30 +157,32 @@ ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  .radio__elem:checked ~ .radio__visible--square:before {
+}
+
+.radio__elem:checked~.radio__visible--square:before {
     display: block;
-  }
-  
-  .radio__visible--square {
-    border:3px solid #ffffff;
+}
+
+.radio__visible--square {
+    border: 3px solid #ffffff;
     width: 20px;
     height: 20px;
     position: relative;
     background: #282828;
     margin-right: 0.5555555556rem;
-  }
-  .radio__visible--square:before {
+}
+
+.radio__visible--square:before {
     content: "";
     width: 10px;
-    height:10px;
+    height: 10px;
     background: url(../img/galochka.svg) center center no-repeat;
     position: absolute;
     display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 footer {
     background: black;

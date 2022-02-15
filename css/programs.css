@@ -52,6 +52,7 @@ header {
     background: white;
     overflow: hidden;
     border-radius: 10px;
+    transition: 0.4s;
 }
 
 img {
@@ -61,8 +62,9 @@ img {
 
 .offers__item:hover {
     box-shadow: 7px 7px gray, 7px 7px gray;
-    transition: 0.4s;
     margin-top: -10px;
+    transition: 0.4s;
+
 }
 
 .offers__item:last-child {
@@ -126,7 +128,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 40px;
-
+    transition: 0.4s ease-in-out;
 }
 
 .offers__btn--link:hover {
