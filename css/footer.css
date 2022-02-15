@@ -7,25 +7,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-ul li {
-    list-style: none;
-}
-
-.container {
+.container--forms {
     width: 1380px;
     margin: 0 auto;
     background-color: #282828;
@@ -38,7 +21,7 @@ ul li {
     align-items: center;
 }
 
-.section__title {
+.section__title--forms {
     padding-top: 50px;
     color: #BFE142;
     margin-bottom: 50px;
@@ -202,7 +185,7 @@ footer {
     left: 100px;
 }
 
-address {
+.contacts__footer {
     display: block;
     position: absolute;
     top: 50px;
