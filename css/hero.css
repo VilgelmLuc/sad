@@ -118,6 +118,7 @@ h4 {
 }
 
 .hero__title {
+    margin-top: 50px;
     font-size: 100px;
     font-weight: bold;
     line-height: 1.1;
