@@ -7,6 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     width: 1380px;
     margin: 0 auto;
+    
 }
 
 a {
@@ -14,17 +15,14 @@ a {
     text-decoration: none;
 }
 
-
-
 ul li {
     list-style: none;
 }
-
 h1,
 h2,
 h3,
 h4 {
-    font-weight: normal;
+    margin: 0;
 }
 
 .container {
@@ -67,6 +65,9 @@ h4 {
     position: absolute;
     top: 30px;
     right: 0;
+}
+.menu__list {
+    margin: 0px;
 }
 
 .menu__item {
@@ -132,11 +133,11 @@ padding-right: 30px;
 padding-bottom: 0px ;
 }
 
-.offers__btn {
+.offers__btn-hero {
     display: flex;
 }
 
-.offers__btn--link {
+.offers__btn--link-hero {
     display: flex;
     width: 400px;
     color: white;
@@ -152,7 +153,7 @@ padding-bottom: 0px ;
 
 }
 
-.offers__btn--link:hover {
+.offers__btn--link-hero:hover {
     background-color: white;
     transition: 0.4s;
     color: #162223;
@@ -176,4 +177,171 @@ padding-bottom: 0px ;
     justify-content: center;
     width: 150px;
 }
+
+
+
 /* section Programs*/
+
+
+
+
+.section__content {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
+.section__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 27px 0 30px 0;
+}
+
+.header__programs {
+    margin-top: 50px;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.offers__list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+
+
+.offers__item {
+    margin: 0 16px 16px 0;
+    width: 360px;
+    height: 720px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.offers__item:hover {
+    box-shadow: 7px 7px gray, 7px 7px gray;
+    margin-top: -10px;
+    transition: 0.4s;
+
+}
+
+.offers__item:last-child {
+    margin-right: 0;
+}
+
+.offers__content {
+    margin: 0 0 30px 30px;
+}
+
+.offers__subtitle {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.meals {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.meals__col--right,
+.meals__col--left {
+    padding: 0;
+    margin-right: 30px;
+}
+
+.meals__item {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.meals__icon {
+    margin-right: 5px;
+}
+
+.meals__desc {
+    margin: 0;
+}
+
+.menu-meals {
+    padding: 0;
+    margin-bottom: 60px;
+
+}
+
+.menu-meals__item {
+    list-style: disc;
+    padding: auto;
+    margin-left: 20px;
+}
+
+
+
+.offers__btn--link-programs {
+    color: #EF3120;
+    width: 170px;
+    background-color: white;
+    border: 3px solid #EF3120;
+    border-radius: 58px;
+    padding: 18px 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    transition: 0.4s ease-in-out;
+}
+
+.offers__btn--link-programs:hover {
+    background-color: #EF3120;
+    transition: 0.4s;
+    color: #FFFFFF;
+}
+
+
+/* section Instagram*/
+.container-inst {
+    width: 1380px;
+    margin: 50px auto;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-inst {
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+
+.link__item {
+    margin-left: 10px;
+    margin-top: 60px;
+    color: black;
+}
+
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.gallery__item {
+    margin: 10px 10px 0px 0px;
+}
+
