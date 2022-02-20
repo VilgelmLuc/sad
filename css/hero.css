@@ -130,12 +130,49 @@ h4 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    position: relative;
+}
+.hero__content:after{
+    content: url(../img/4511.png);
+    position: absolute;
+    right: -30px;
+    bottom: 15px;
+    transition: 0.3s;
+}
+.hero__content:hover:after{
+    transform: scale(1.5) rotate(30deg);
+    transition: 0.3s;
 }
 
 .hero__title-section {
     width: 450px;
     padding-left: 100px;
+    position: relative;
 }
+.hero__title-section:before{
+    content: url(../img/shpinat.svg);
+    position: absolute;
+    left: -30px;
+    bottom: 30px;
+    transition: 0.3s;
+}
+.hero__title-section:hover:before{
+    transform: scale(1.5) rotate(30deg);
+    transition: 0.3s;
+}
+.hero__title-section:after{
+    content: url(../img/14001.png);
+    position: absolute;
+    right: -300px;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.hero__title-section:hover:after{
+    transform: scale(1.5) rotate(30deg);
+    transition: 0.3s;
+}
+
+
 
 .hero__title {
     margin-top: 50px;
@@ -148,7 +185,7 @@ h4 {
 
 .hero__subtitle {
     font-size: 18px;
-    margin-bottom: 45px;
+    margin-bottom: 90px;
     font-weight: bold;
 
 }
@@ -156,7 +193,32 @@ h4 {
 .hero__img-section {
     padding-right: 30px;
     padding-bottom: 0px;
+    position: relative;
 }
+.hero__img-section:before{
+    content: url(../img/24001.png);
+    position: absolute;
+    left: -30px;
+    top: 30px;
+    transition: 0.3s;
+}
+.hero__img-section:hover:before{
+    transform: scale(1.5) rotate(30deg);
+    transition: 0.3s;
+}
+.hero__img-section:after{
+    content: url(../img/34001.png);
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    transition: 0.3s;
+}
+.hero__img-section:hover:after{
+    transform: scale(1.5) rotate(30deg);
+    transition: 0.3s;
+}
+
+
 
 .offers__btn-hero {
     display: flex;
@@ -266,7 +328,7 @@ h4 {
     animation-iteration-count:infinite;
 }
 
-.benefits__icon:nth-child(1) {
+.benefits__icon:first-child {
     animation-duration: 3s;
     animation-delay: 9s;
 }
@@ -292,12 +354,12 @@ h4 {
         transform: rotateY(0deg);
     }
 
-    80% {
+    50% {
         transform: rotateY(180deg);
     }
 
     100% {
-        transform: rotateY(180deg);
+        transform: rotateY(360deg);
     }
 }
 
