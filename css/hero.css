@@ -7,6 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     width: 1380px;
     margin: 0 auto;
+    position: relative;
 
 }
 
@@ -83,22 +84,25 @@ h4 {
     font-size: 14px;
     transition: 0.4s;
 }
-.menu__link:hover{
+
+.menu__link:hover {
     color: #FF8C00;
     transition: 0.3s;
 }
-.menu__link:after{
+
+.menu__link:after {
     display: block;
-	left: 0; 
-    width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #FF8C00; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.3s ease-out; 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF8C00;
+    content: "";
+    transition: width 0.3s ease-out;
 }
-.menu__link:hover:after{
-        color: #FF8C00;
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+
+.menu__link:hover:after {
+    color: #FF8C00;
+    width: 100%;
 }
 
 
@@ -115,7 +119,8 @@ h4 {
     font-weight: bold;
     transition: 0.3s;
 }
-.contacts__number:hover{
+
+.contacts__number:hover {
     transition: 0.3s;
     color: #FF8C00;
 }
@@ -132,14 +137,16 @@ h4 {
     margin-bottom: 30px;
     position: relative;
 }
-.hero__content:after{
+
+.hero__content:after {
     content: url(../img/4511.png);
     position: absolute;
     right: -30px;
     bottom: 15px;
     transition: 0.3s;
 }
-.hero__content:hover:after{
+
+.hero__content:hover:after {
     transform: scale(1.5) rotate(30deg);
     transition: 0.3s;
 }
@@ -149,25 +156,29 @@ h4 {
     padding-left: 100px;
     position: relative;
 }
-.hero__title-section:before{
+
+.hero__title-section:before {
     content: url(../img/shpinat.svg);
     position: absolute;
     left: -30px;
     bottom: 30px;
     transition: 0.3s;
 }
-.hero__title-section:hover:before{
+
+.hero__title-section:hover:before {
     transform: scale(1.5) rotate(30deg);
     transition: 0.3s;
 }
-.hero__title-section:after{
+
+.hero__title-section:after {
     content: url(../img/14001.png);
     position: absolute;
     right: -300px;
     bottom: -10px;
     transition: 0.3s;
 }
-.hero__title-section:hover:after{
+
+.hero__title-section:hover:after {
     transform: scale(1.5) rotate(30deg);
     transition: 0.3s;
 }
@@ -195,25 +206,29 @@ h4 {
     padding-bottom: 0px;
     position: relative;
 }
-.hero__img-section:before{
+
+.hero__img-section:before {
     content: url(../img/24001.png);
     position: absolute;
     left: -30px;
     top: 30px;
     transition: 0.3s;
 }
-.hero__img-section:hover:before{
+
+.hero__img-section:hover:before {
     transform: scale(1.5) rotate(30deg);
     transition: 0.3s;
 }
-.hero__img-section:after{
+
+.hero__img-section:after {
     content: url(../img/34001.png);
     position: absolute;
     right: -30px;
     top: -10px;
     transition: 0.3s;
 }
-.hero__img-section:hover:after{
+
+.hero__img-section:hover:after {
     transform: scale(1.5) rotate(30deg);
     transition: 0.3s;
 }
@@ -259,11 +274,8 @@ h4 {
     display: flex;
     justify-content: space-between;
     opacity: 0;
-    /*Элемент полностью прозрачный (невидимый)*/
     transition: 1s;
-    /*Скорость перехода состояния элемента*/
     animation: show 1.5s 1;
-    /* Указываем название анимации, её время и количество повторов*/
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
@@ -277,14 +289,12 @@ h4 {
         opacity: 1;
     }
 }
-.benefits__item{
+
+.benefits__item {
     width: 150px;
     opacity: 0;
-    /*Элемент полностью прозрачный (невидимый)*/
     transition: 1s;
-    /*Скорость перехода состояния элемента*/
-    animation: showE 1.5s 1;
-    /* Указываем название анимации, её время и количество повторов*/
+    animation: showE 3s 1;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
@@ -298,22 +308,27 @@ h4 {
         opacity: 1;
     }
 }
+
 .benefits__item:nth-child(1) {
     animation-duration: 1.5s;
-    animation-delay: 0s; 
+    animation-delay: 0s;
 }
+
 .benefits__item:nth-child(2) {
     animation-duration: 3s;
     animation-delay: 3s;
 }
+
 .benefits__item:nth-child(3) {
     animation-duration: 3s;
     animation-delay: 4.5s;
 }
+
 .benefits__item:nth-child(4) {
     animation-duration: 3s;
     animation-delay: 6s;
 }
+
 .benefits__item:nth-child(5) {
     animation-duration: 3s;
     animation-delay: 7.5s;
@@ -325,28 +340,7 @@ h4 {
     justify-content: center;
     width: 150px;
     animation-name: flip;
-    animation-iteration-count:infinite;
-}
-
-.benefits__icon:first-child {
-    animation-duration: 3s;
-    animation-delay: 9s;
-}
-.benefits__icon:nth-child(2) {
-    animation-duration: 3s;
-    animation-delay: 10.5s;
-}
-.benefits__icon:nth-child(3) {
-    animation-duration: 3s;
-    animation-delay: 12s;
-}
-.benefits__icon:nth-child(4) {
-    animation-duration: 3s;
-    animation-delay: 13.5s;
-}
-.benefits__icon:nth-child(5) {
-    animation-duration: 3s;
-    animation-delay: 15s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes flip {
@@ -362,6 +356,32 @@ h4 {
         transform: rotateY(360deg);
     }
 }
+
+.benefits__icon:first-child {
+    animation-duration: 6s;
+    animation-delay: 9s;
+}
+
+.benefits__icon:nth-child(2) {
+    animation-duration: 6s;
+    animation-delay: 10.5s;
+}
+
+.benefits__icon:nth-child(3) {
+    animation-duration: 6s;
+    animation-delay: 12s;
+}
+
+.benefits__icon:nth-child(4) {
+    animation-duration: 6s;
+    animation-delay: 13.5s;
+}
+
+.benefits__icon:nth-child(5) {
+    animation-duration: 6s;
+    animation-delay: 15s;
+}
+
 
 
 
@@ -391,6 +411,86 @@ h4 {
     margin-top: 50px;
     margin-bottom: auto;
     justify-content: center;
+}
+
+.header__programs:after {
+    content: url(../img/offers__back.png);
+    position: absolute;
+    right: 1px;
+    top: 2000px;
+    z-index: -10;
+}
+
+.pepers1 {
+    position: absolute;
+    right: 0px;
+    top: 900px;
+    transition: 0.3s;
+}
+
+.pepers1:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+
+.salat {
+    position: absolute;
+    right: 0%;
+    top: 2430px;
+    transition: 0.3s;
+}
+
+.salat:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+
+.spice {
+    position: absolute;
+    right: 0%;
+    top: 2121px;
+    transition: 0.3s;
+}
+
+.spice:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+
+.svekla__big {
+    position: absolute;
+    right: 110px;
+    top: 2150px;
+    transition: 0.3s;
+}
+
+.svekla__big:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+
+.svekla__small {
+    position: absolute;
+    right: 100px;
+    top: 2000px;
+    transition: 0.3s;
+}
+
+.svekla__small:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+
+.cucu {
+    position: absolute;
+    left: 0%;
+    top: 2500px;
+    transition: 0.3s;
+}
+
+.cucu:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
 }
 
 .offers__list {
@@ -531,6 +631,30 @@ img {
 
 .gallery__item {
     margin: 10px 10px 0px 0px;
+}
+
+.bazilik {
+    position: absolute;
+    left: 0px;
+    bottom: 1750px;
+    transition: 0.3s;
+}
+
+.bazilik:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+
+.greenery {
+    position: absolute;
+    left: 290px;
+    bottom: 1050px;
+    transition: 0.3s;
+}
+
+.greenery:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
 }
 
 /* section forms+footer*/
@@ -692,6 +816,40 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.mushrooms {
+    position: absolute;
+    left: -2px;
+    bottom: 850px;
+    transition: 0.3s;
+}
+
+.mushrooms:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+.halapen {
+    position: absolute;
+    left: -2px;
+    bottom: 600px;
+    transition: 0.3s;
+}
+
+.halapen:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
+}
+.habanero {
+    position: absolute;
+    right: 0px;
+    bottom: 200px;
+    transition: 0.3s;
+}
+
+.habanero:hover {
+    transform: scale(1.2) rotate(30deg);
+    transition: 0.3s;
 }
 
 footer {
