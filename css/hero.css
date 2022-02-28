@@ -57,19 +57,21 @@ h4 {
 
 .container {
     margin: 0 auto;
-    width: 73.125rem;
+    width: auto;
+    max-width: 73.125rem;
 }
 
 .container-hero {
     margin: 0 auto;
-    width: 86.25rem;
+    width: auto;
+    max-width: 86.25rem;
     background: url(../img/greenback.svg) -6.25rem top no-repeat;
 }
 
 .container-hero--benefits {
     margin: 0 auto;
-    width: 73.125rem;
-}
+    width: auto;
+    max-width: 73.125rem;}
 
 .header {
     height: 4.375rem;
@@ -159,7 +161,8 @@ h4 {
 }
 
 .hero__content {
-    width: 86.25rem;
+    width: auto;
+    max-width: 86.25rem;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.875rem;
@@ -180,7 +183,8 @@ h4 {
 }
 
 .hero__title-section {
-    width: 28.125rem;
+    width: auto;
+    max-width: 28.125rem;
     padding-left: 6.25rem;
     position: relative;
 }
@@ -420,7 +424,8 @@ h4 {
 
 
 .section__content {
-    width: 73.125rem;
+    width: auto;
+    max-width: 73.125rem;
     margin: 0 auto;
     text-align: center;
 
@@ -538,7 +543,8 @@ img {
 
 .offers__item {
     margin: 0 1rem 1rem 0;
-    width: 22.5rem;
+    width: auto;
+    max-width: 22.5rem;
     height: 45rem;
     background: white;
     overflow: hidden;
@@ -630,7 +636,8 @@ img {
 
 
 .container-inst {
-    width: 86.25rem;
+    width: auto;
+    max-width: 86.25rem;
     margin: 3.125rem auto;
 }
 
@@ -691,7 +698,8 @@ img {
 /* section forms+footer*/
 
 .container--forms {
-    width: 86.25rem;
+    width: auto;
+    max-width: 86.25rem;
     margin: 0 auto;
     background-color: #282828;
 
@@ -710,7 +718,8 @@ img {
 }
 
 .form {
-    width: 58.125rem;
+    width: auto;
+    max-width: 58.125rem;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -888,7 +897,8 @@ footer {
     background: black;
     margin: 0 auto;
     height: 12.5rem;
-    width: 86.25rem;
+    width: auto;
+    max-width: 86.25rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -936,7 +946,8 @@ footer {
 }
 
 .footerps {
-    width: 86.25rem;
+    width: auto;
+    max-width: 86.25rem;
     display: flex;
     position: absolute;
     bottom: 3.125rem;
