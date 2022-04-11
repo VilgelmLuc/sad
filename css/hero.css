@@ -377,7 +377,7 @@ h4 {
 
 @keyframes flip {
     0% {
-        transform: rotateY(0deg);
+        transform: rotatey(0deg);
     }
 
     50% {
