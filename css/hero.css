@@ -542,13 +542,14 @@ img {
 
 
 .offers__item {
-    margin: 0 1rem 1rem 0;
+    margin: 5px;
     width: auto;
     max-width: 22.5rem;
     height: 45rem;
     background: white;
     overflow: hidden;
     border-radius: .625rem;
+    border:#bfe142 2px dashed ;
     transition: 0.4s;
 }
 
